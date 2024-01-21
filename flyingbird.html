@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bird{
+            width: 128px;
+            height: 128px;
+            margin-top: 200px;
+            background: red;
+            background-image:url("bird1.png");
+            background-size: cover;
+            animation-name:fly;
+            animation-duration :3s;
+            animation-iteration-count: infinite;
+            animation-timing-function: steps(5);
+            position: relative;
+        }
+        @keyframes fly{
+            0%{
+                background-position:0px 0px;
+                left: 0%;
+            }
+            100%{
+                background-position:-640px 0px;
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bird"></div>
+</body>
+</html>
