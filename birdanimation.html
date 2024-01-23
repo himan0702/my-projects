@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 120px;
+            height:112px;
+            margin:200px auto;
+            background-image:url("bird.png");
+            animation-name: birdaniamtion;
+            animation-duration:10s;
+            animation-timing-function:infinite;
+        }
+        @keyframes birdanimation{
+            to{
+                background-position:0px 0px;
+            }
+            from{
+                background-position:-450px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
